@@ -1,5 +1,5 @@
 var birthstone = require('..');
-var assert = require('chai').assert;
+var assert = require('assert');
 
 describe(".getBirthstone(month)", function () {
     it("should get the birthstone based on the month given", function () {

@@ -4,7 +4,8 @@
   "description": "Determine the birthstone from the given month.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "test-travis": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
   },
   "homepage": "https://github.com/ekimng/birthstone#readme",
   "devDependencies": {
-    "chai": "^3.5.0"
+    "istanbul": "^0.4.4",
+    "mocha": "^2.5.3"
   }
 }

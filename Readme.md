@@ -11,7 +11,7 @@ $ npm install birthstone
 
 # Example
 
-To get the birthstone for the given month"
+To get the birthstone for the given month:
 
 ```js
 var birthstone = require('birthstone');
