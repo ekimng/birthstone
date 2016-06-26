@@ -1,5 +1,5 @@
 
-# birthstone
+# birthstone [![Build Status](https://travis-ci.org/ekimng/birthstone.svg?branch=master)](https://travis-ci.org/ekimng/birthstone) [![Coverage Status](https://coveralls.io/repos/github/ekimng/birthstone/badge.svg?branch=master)](https://coveralls.io/github/ekimng/birthstone?branch=master)
 
   Determine the birthstone from the given month.
 
