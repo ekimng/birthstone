@@ -25,6 +25,6 @@ exports.getBirthstone = function (month) {
         case 12:
             return "topaz";
         default:
-            return "Invalid month."
+            return "invalid month"
     }
 }

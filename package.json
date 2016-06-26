@@ -4,7 +4,7 @@
   "description": "determine the birthstone from the given month",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -27,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/ekimng/birthstone/issues"
   },
-  "homepage": "https://github.com/ekimng/birthstone#readme"
+  "homepage": "https://github.com/ekimng/birthstone#readme",
+  "devDependencies": {
+    "chai": "^3.5.0"
+  }
 }
