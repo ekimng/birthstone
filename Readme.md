@@ -1,5 +1,5 @@
 
-# birthstone [![Build Status]
+# birthstone
 
   Determine the birthstone from the given month.
 
