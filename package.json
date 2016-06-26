@@ -1,0 +1,31 @@
+{
+  "name": "birthstone",
+  "version": "0.1.0",
+  "description": "determine the birthstone from the given month",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ekimng/birthstone.git"
+  },
+  "keywords": [
+    "birthstone",
+    "birth",
+    "stone",
+    "birthday",
+    "gemstone",
+    "gem",
+    "calendar",
+    "horoscope",
+    "zodiac",
+    "sign"
+  ],
+  "author": "Mike Ng <ekimng@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ekimng/birthstone/issues"
+  },
+  "homepage": "https://github.com/ekimng/birthstone#readme"
+}
