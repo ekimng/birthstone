@@ -1,7 +1,7 @@
 {
   "name": "birthstone",
   "version": "0.1.0",
-  "description": "determine the birthstone from the given month",
+  "description": "Determine the birthstone from the given month.",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
