@@ -1,36 +1,41 @@
 /**
  * Get the birthstone based on the given `month`.
+ * If not given a month then it will use the current month.
  *
- * @param {Number} month
+ * @param {Number} month zero-based value (where zero indicates the first month of the year).
  * @api public
  */
-exports.getBirthstone = function (month) {
+module.exports = function birthstone(month) {
+    if (typeof month === 'undefined' || month === null) {
+        return birthstone(new Date().getMonth());
+    }
+
     switch (month) {
-        case 1:
+        case 0:
             return "garnet";
-        case 2:
+        case 1:
             return "amethyst";
-        case 3:
+        case 2:
             return "aquamarine";
-        case 4:
+        case 3:
             return "diamond";
-        case 5:
+        case 4:
             return "emerald";
-        case 6:
+        case 5:
             return "pearl";
-        case 7:
+        case 6:
             return "ruby";
-        case 8:
+        case 7:
             return "peridot";
-        case 9:
+        case 8:
             return "sapphire";
-        case 10:
+        case 9:
             return "opal";
-        case 11:
+        case 10:
             return "citrine";
-        case 12:
+        case 11:
             return "topaz";
         default:
-            return "invalid month"
+            throw new Error("Invalid month. The month should be a zero-based value (where zero indicates the first month of the year).");
     }
 }

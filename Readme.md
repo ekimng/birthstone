@@ -11,12 +11,22 @@ $ npm install birthstone
 
 # Example
 
-To get the birthstone for the given month:
+To get the birthstone for the given month (zero-based value (where zero indicates the first month of the year)):
 
 ```js
 var birthstone = require('birthstone');
 
-console.log(birthstone.getBirthstone(1)); //garnet
+birthstone();
+//=> 'garnet' (current month birthstone) 
+
+birthstone(0);
+//=> 'garnet' (January birthstone)
+
+birthstone(11);
+//=> 'topaz' (December birthstone)
+
+birthstone(12);
+//=> Error 
 ```
 
 ## License
