@@ -1,26 +1,3 @@
-
-# birthstone [![Build Status](https://travis-ci.org/ekimng/birthstone.svg?branch=master)](https://travis-ci.org/ekimng/birthstone) [![Coverage Status](https://coveralls.io/repos/github/ekimng/birthstone/badge.svg?branch=master)](https://coveralls.io/github/ekimng/birthstone?branch=master)
-
-  Determine the birthstone from the given month.
-
-# Installation
-
-```bash
-$ npm install birthstone
-```
-
-# Example
-
-To get the birthstone for the given month:
-
-```js
-var birthstone = require('birthstone');
-
-console.log(birthstone.getBirthstone(1)); //garnet
-```
-
-## License
-
 The MIT License (MIT)
 
 Copyright (c) 2016 Mike Ng <ekimng@outlook.com> 

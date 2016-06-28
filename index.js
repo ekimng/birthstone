@@ -1,3 +1,9 @@
+/**
+ * Get the birthstone based on the given `month`.
+ *
+ * @param {Number} month
+ * @api public
+ */
 exports.getBirthstone = function (month) {
     switch (month) {
         case 1:
