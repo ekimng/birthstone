@@ -1,7 +1,7 @@
 {
   "name": "birthstone",
   "version": "0.3.0",
-  "description": "Determine the birthstone from the given month.",
+  "description": "Determine the birthstone(s) from the given month. (American Gem Trade Association definitions)",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
