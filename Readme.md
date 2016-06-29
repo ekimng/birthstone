@@ -1,7 +1,7 @@
 
 # birthstone [![Build Status](https://travis-ci.org/ekimng/birthstone.svg?branch=master)](https://travis-ci.org/ekimng/birthstone) [![Coverage Status](https://coveralls.io/repos/github/ekimng/birthstone/badge.svg?branch=master)](https://coveralls.io/github/ekimng/birthstone?branch=master)
 
-  Determine the birthstone from the given month.
+  Determine the birthstone(s) from the given month (according to AGTA).
 
 # Installation
 
@@ -11,19 +11,19 @@ $ npm install birthstone
 
 # Example
 
-To get the birthstone for the given month (zero-based value (where zero indicates the first month of the year)):
+To get the birthstone(s) for the given month (zero-based value (where zero indicates the first month of the year)):
 
 ```js
 var birthstone = require('birthstone');
 
 birthstone();
-//=> 'garnet' (current month birthstone) 
+//=> ["Garnet"] (The birthstone of the current month (assuming the current month is January)) 
 
 birthstone(0);
-//=> 'garnet' (January birthstone)
+//=> ["Garnet"] (January birthstone)
 
 birthstone(11);
-//=> 'topaz' (December birthstone)
+//=> ["Turquoise", "Zircon", "Tanzanite"] (December birthstone)
 
 birthstone(12);
 //=> Error 

@@ -1,6 +1,8 @@
 /**
  * Get the birthstone based on the given `month`.
  * If not given a month then it will use the current month.
+ * 
+ * source: http://www.agta.org/gemstones/birthstones.html
  *
  * @param {Number} month zero-based value (where zero indicates the first month of the year).
  * @api public
@@ -12,29 +14,29 @@ module.exports = function birthstone(month) {
 
     switch (month) {
         case 0:
-            return "garnet";
+            return ["Garnet"];
         case 1:
-            return "amethyst";
+            return ["Amethyst"];
         case 2:
-            return "aquamarine";
+            return ["Aquamarine", "Bloodstone"];
         case 3:
-            return "diamond";
+            return ["Diamond"];
         case 4:
-            return "emerald";
+            return ["Emerald"];
         case 5:
-            return "pearl";
+            return ["Pearl", "Moonstone", "Alexandrite"];
         case 6:
-            return "ruby";
+            return ["Ruby"];
         case 7:
-            return "peridot";
+            return ["Peridot"];
         case 8:
-            return "sapphire";
+            return ["Sapphire"];
         case 9:
-            return "opal";
+            return ["Opal", "Tourmaline"];
         case 10:
-            return "citrine";
+            return ["Topaz", "Citrine"];
         case 11:
-            return "topaz";
+            return ["Turquoise", "Zircon", "Tanzanite"];
         default:
             throw new Error("Invalid month. The month should be a zero-based value (where zero indicates the first month of the year).");
     }

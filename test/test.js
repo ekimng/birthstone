@@ -2,25 +2,25 @@ var birthstone = require('..');
 var assert = require('assert');
 
 describe("birthstone(month)", function () {
-    it("should get the birthstone based on the month given", function () {
-        assert.equal(birthstone(0), "garnet");
-        assert.equal(birthstone(1), "amethyst");
-        assert.equal(birthstone(2), "aquamarine");
-        assert.equal(birthstone(3), "diamond");
-        assert.equal(birthstone(4), "emerald");
-        assert.equal(birthstone(5), "pearl");
-        assert.equal(birthstone(6), "ruby");
-        assert.equal(birthstone(7), "peridot");
-        assert.equal(birthstone(8), "sapphire");
-        assert.equal(birthstone(9), "opal");
-        assert.equal(birthstone(10), "citrine");
-        assert.equal(birthstone(11), "topaz");
+    it("should get the birthstone(s) based on the month given", function () {
+        assert.deepEqual(birthstone(0), ["Garnet"]);
+        assert.deepEqual(birthstone(1), ["Amethyst"]);
+        assert.deepEqual(birthstone(2), ["Aquamarine", "Bloodstone"]);
+        assert.deepEqual(birthstone(3), ["Diamond"]);
+        assert.deepEqual(birthstone(4), ["Emerald"]);
+        assert.deepEqual(birthstone(5), ["Pearl", "Moonstone", "Alexandrite"]);
+        assert.deepEqual(birthstone(6), ["Ruby"]);
+        assert.deepEqual(birthstone(7), ["Peridot"]);
+        assert.deepEqual(birthstone(8), ["Sapphire"]);
+        assert.deepEqual(birthstone(9), ["Opal", "Tourmaline"]);
+        assert.deepEqual(birthstone(10), ["Topaz", "Citrine"]);
+        assert.deepEqual(birthstone(11), ["Turquoise", "Zircon", "Tanzanite"]);
     });
 });
 
 describe("birthstone()", function () {
-    it("should get the birthstone based on the current month", function () {
-        assert.equal(birthstone(), birthstone(new Date().getMonth()));
+    it("should get the birthstone(s) based on the current month", function () {
+        assert.deepEqual(birthstone(), birthstone(new Date().getMonth()));
     });
 });
 
